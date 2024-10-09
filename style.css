@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.png);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    height:100px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: wavy;
+    color: aqua;
+    text-transform: capitalize;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: blue;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content, .content2{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: blue;
+    background-color: aquamarine;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+p a{
+    text-decoration: wavy;
+    color: blue;
+    text-transform: capitalize;
+}
+p a::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background: blue;
+    left: 0;
+    transition: 0.5s;
+    margin-top: 39px;
+}
+p a:hover::after{
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 45%;
+}
+.content2 p a:hover::after{
+    width: 55%;
+    margin-left: 22%;
+    margin-right: 45%;
+}
+.HFF a:hover::after{
+    width: 55%;
+    margin-left: 22%;
+}
